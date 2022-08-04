@@ -31,6 +31,10 @@ terraform -chdir=initial_stack output -json
 LAST_DB_SNAPSHOT_ID=$(terraform -chdir=initial_stack output -json | jq -r ".initial_db_final_snapshot.value")
 echo $LAST_DB_SNAPSHOT_ID
 
+# DEBUG
+exit;
+
+
 terraform -chdir=initial_stack destroy -auto-approve
 
 # apply stack and load the snapshot
