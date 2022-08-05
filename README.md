@@ -4,3 +4,4 @@ Destroy and re-create a RDS MySQL Database from a manual snapshot with Terraform
 ```
 bash run.sh
 ```
+You can run it several times to check the behaviour with or without a snapshot in your account.
